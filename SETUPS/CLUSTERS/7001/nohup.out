@@ -1,0 +1,712 @@
+30963:C 23 Mar 2025 12:25:11.431 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+30963:C 23 Mar 2025 12:25:11.431 # Redis version=7.0.15, bits=64, commit=00000000, modified=0, pid=30963, just started
+30963:C 23 Mar 2025 12:25:11.431 # Configuration loaded
+30963:M 23 Mar 2025 12:25:11.434 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+30963:M 23 Mar 2025 12:25:11.434 * monotonic clock: POSIX clock_gettime
+30963:M 23 Mar 2025 12:25:11.436 * No cluster configuration found, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+30963:M 23 Mar 2025 12:25:11.665 * Running mode=cluster, port=7001.
+30963:M 23 Mar 2025 12:25:11.665 # Server initialized
+30963:M 23 Mar 2025 12:25:11.665 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+30963:M 23 Mar 2025 12:25:11.836 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+30963:M 23 Mar 2025 12:25:12.154 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+30963:M 23 Mar 2025 12:25:12.154 * Ready to accept connections
+30963:M 23 Mar 2025 15:06:00.131 # configEpoch set to 2 via CLUSTER SET-CONFIG-EPOCH
+30963:M 23 Mar 2025 15:06:00.283 # IP address for this node updated to 127.0.0.1
+30963:M 23 Mar 2025 15:06:02.513 * Replica 127.0.0.1:7003 asks for synchronization
+30963:M 23 Mar 2025 15:06:02.514 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'c5fe00019f2104bc31deff7808f8475fda4230f2', my replication IDs are '98f77b535091cec45aaf0d88c750970b0b4f89bd' and '0000000000000000000000000000000000000000')
+30963:M 23 Mar 2025 15:06:02.514 * Replication backlog created, my new replication IDs are '47ddeb4cb9df941f452d4a1c0012b0eb04a8fa6d' and '0000000000000000000000000000000000000000'
+30963:M 23 Mar 2025 15:06:02.514 * Delay next BGSAVE for diskless SYNC
+30963:M 23 Mar 2025 15:06:05.092 # Cluster state changed: ok
+30963:M 23 Mar 2025 15:06:07.307 * Starting BGSAVE for SYNC with target: replicas sockets
+30963:M 23 Mar 2025 15:06:07.309 * Background RDB transfer started by pid 34241
+34241:C 23 Mar 2025 15:06:07.314 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+30963:M 23 Mar 2025 15:06:07.314 # Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+30963:M 23 Mar 2025 15:06:07.410 * Background RDB transfer terminated with success
+30963:M 23 Mar 2025 15:06:07.410 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from slave to enable streaming
+30963:M 23 Mar 2025 15:06:07.410 * Synchronization with replica 127.0.0.1:7003 succeeded
+9422:C 24 Mar 2025 11:50:37.974 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+9422:C 24 Mar 2025 11:50:37.983 # Redis version=7.0.15, bits=64, commit=00000000, modified=0, pid=9422, just started
+9422:C 24 Mar 2025 11:50:37.983 # Configuration loaded
+9422:M 24 Mar 2025 11:50:37.985 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+9422:M 24 Mar 2025 11:50:37.985 * monotonic clock: POSIX clock_gettime
+9422:M 24 Mar 2025 11:50:38.161 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+9422:M 24 Mar 2025 11:50:38.162 * Running mode=cluster, port=7001.
+9422:M 24 Mar 2025 11:50:38.162 # Server initialized
+9422:M 24 Mar 2025 11:50:38.162 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+9422:M 24 Mar 2025 11:50:38.254 * Reading RDB base file on AOF loading...
+9422:M 24 Mar 2025 11:50:38.254 * Loading RDB produced by version 7.0.15
+9422:M 24 Mar 2025 11:50:38.254 * RDB age 84327 seconds
+9422:M 24 Mar 2025 11:50:38.254 * RDB memory usage when created 1.53 Mb
+9422:M 24 Mar 2025 11:50:38.254 * RDB is base AOF
+9422:M 24 Mar 2025 11:50:38.254 * Done loading RDB, keys loaded: 0, keys expired: 0.
+9422:M 24 Mar 2025 11:50:38.255 * DB loaded from base file appendonly.aof.1.base.rdb: 0.022 seconds
+9422:M 24 Mar 2025 11:50:38.255 * DB loaded from append only file: 0.023 seconds
+9422:M 24 Mar 2025 11:50:38.255 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+9422:M 24 Mar 2025 11:50:38.255 * Ready to accept connections
+9422:M 24 Mar 2025 11:50:39.496 * Replica 127.0.0.1:7003 asks for synchronization
+9422:M 24 Mar 2025 11:50:39.496 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '6917a0fe958a9643a3a5de882547ddd3617d926f', my replication IDs are 'ac899e81206e385e367da8e9f491c44e2fc1a4fe' and '0000000000000000000000000000000000000000')
+9422:M 24 Mar 2025 11:50:39.496 * Replication backlog created, my new replication IDs are '7431795a5c7647dd25eab5a111f24296b51dccec' and '0000000000000000000000000000000000000000'
+9422:M 24 Mar 2025 11:50:39.496 * Delay next BGSAVE for diskless SYNC
+9422:M 24 Mar 2025 11:50:40.352 # Cluster state changed: ok
+9422:M 24 Mar 2025 11:50:44.177 * Starting BGSAVE for SYNC with target: replicas sockets
+9422:M 24 Mar 2025 11:50:44.179 * Background RDB transfer started by pid 9470
+9470:C 24 Mar 2025 11:50:44.184 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+9422:M 24 Mar 2025 11:50:44.184 # Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+9422:M 24 Mar 2025 11:50:44.280 * Background RDB transfer terminated with success
+9422:M 24 Mar 2025 11:50:44.280 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from slave to enable streaming
+9422:M 24 Mar 2025 11:50:44.280 * Synchronization with replica 127.0.0.1:7003 succeeded
+31144:C 25 Mar 2025 14:02:00.305 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+31144:C 25 Mar 2025 14:02:00.345 # Redis version=7.0.15, bits=64, commit=00000000, modified=0, pid=31144, just started
+31144:C 25 Mar 2025 14:02:00.346 # Configuration loaded
+31144:M 25 Mar 2025 14:02:00.352 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+31144:M 25 Mar 2025 14:02:00.352 * monotonic clock: POSIX clock_gettime
+31144:M 25 Mar 2025 14:02:00.386 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+31144:M 25 Mar 2025 14:02:00.388 * Running mode=cluster, port=7001.
+31144:M 25 Mar 2025 14:02:00.388 # Server initialized
+31144:M 25 Mar 2025 14:02:00.388 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+31144:M 25 Mar 2025 14:02:00.452 * Reading RDB base file on AOF loading...
+31144:M 25 Mar 2025 14:02:00.452 * Loading RDB produced by version 7.0.15
+31144:M 25 Mar 2025 14:02:00.452 * RDB age 178609 seconds
+31144:M 25 Mar 2025 14:02:00.452 * RDB memory usage when created 1.53 Mb
+31144:M 25 Mar 2025 14:02:00.452 * RDB is base AOF
+31144:M 25 Mar 2025 14:02:00.452 * Done loading RDB, keys loaded: 0, keys expired: 0.
+31144:M 25 Mar 2025 14:02:00.453 * DB loaded from base file appendonly.aof.1.base.rdb: 0.017 seconds
+31144:M 25 Mar 2025 14:02:00.453 * DB loaded from append only file: 0.017 seconds
+31144:M 25 Mar 2025 14:02:00.453 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+31144:M 25 Mar 2025 14:02:00.454 * Ready to accept connections
+31144:M 25 Mar 2025 14:02:01.868 * Replica 127.0.0.1:7003 asks for synchronization
+31144:M 25 Mar 2025 14:02:01.868 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'fef2f967a0cc1e0d8434c155abce1612590a4cf7', my replication IDs are '480e44e4fa765ae13fdb407f61b0aa0a12b007ad' and '0000000000000000000000000000000000000000')
+31144:M 25 Mar 2025 14:02:01.868 * Replication backlog created, my new replication IDs are '9295ab18e3a8e3bb0faf15c2c8795c4f3ec02247' and '0000000000000000000000000000000000000000'
+31144:M 25 Mar 2025 14:02:01.868 * Delay next BGSAVE for diskless SYNC
+31144:M 25 Mar 2025 14:02:02.553 # Cluster state changed: ok
+31144:M 25 Mar 2025 14:02:06.979 * Starting BGSAVE for SYNC with target: replicas sockets
+31144:M 25 Mar 2025 14:02:06.981 * Background RDB transfer started by pid 31196
+31196:C 25 Mar 2025 14:02:06.986 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+31144:M 25 Mar 2025 14:02:06.986 # Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+31144:M 25 Mar 2025 14:02:07.082 * Background RDB transfer terminated with success
+31144:M 25 Mar 2025 14:02:07.082 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from slave to enable streaming
+31144:M 25 Mar 2025 14:02:07.082 * Synchronization with replica 127.0.0.1:7003 succeeded
+6141:C 25 Mar 2025 19:44:34.187 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+6141:C 25 Mar 2025 19:44:34.219 # Redis version=7.0.15, bits=64, commit=00000000, modified=0, pid=6141, just started
+6141:C 25 Mar 2025 19:44:34.219 # Configuration loaded
+6141:M 25 Mar 2025 19:44:34.222 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+6141:M 25 Mar 2025 19:44:34.222 * monotonic clock: POSIX clock_gettime
+6141:M 25 Mar 2025 19:44:34.307 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+6141:M 25 Mar 2025 19:44:34.310 * Running mode=cluster, port=7001.
+6141:M 25 Mar 2025 19:44:34.310 # Server initialized
+6141:M 25 Mar 2025 19:44:34.310 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+6141:M 25 Mar 2025 19:44:34.663 * Reading RDB base file on AOF loading...
+6141:M 25 Mar 2025 19:44:34.663 * Loading RDB produced by version 7.0.15
+6141:M 25 Mar 2025 19:44:34.663 * RDB age 199163 seconds
+6141:M 25 Mar 2025 19:44:34.663 * RDB memory usage when created 1.53 Mb
+6141:M 25 Mar 2025 19:44:34.663 * RDB is base AOF
+6141:M 25 Mar 2025 19:44:34.663 * Done loading RDB, keys loaded: 0, keys expired: 0.
+6141:M 25 Mar 2025 19:44:34.664 * DB loaded from base file appendonly.aof.1.base.rdb: 0.137 seconds
+6141:M 25 Mar 2025 19:44:34.664 * DB loaded from append only file: 0.137 seconds
+6141:M 25 Mar 2025 19:44:34.664 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+6141:M 25 Mar 2025 19:44:34.664 * Ready to accept connections
+6141:M 25 Mar 2025 19:44:35.863 * Replica 127.0.0.1:7003 asks for synchronization
+6141:M 25 Mar 2025 19:44:35.863 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '78b9f9d908e15dde8656676dfbe84808f0ddc8a7', my replication IDs are 'dd637a86850c78cd533a6232d8a807e7718fe95c' and '0000000000000000000000000000000000000000')
+6141:M 25 Mar 2025 19:44:35.863 * Replication backlog created, my new replication IDs are '181e5545f61ce37934c4323ffa6175dca2e68b25' and '0000000000000000000000000000000000000000'
+6141:M 25 Mar 2025 19:44:35.863 * Delay next BGSAVE for diskless SYNC
+6141:M 25 Mar 2025 19:44:36.680 # Cluster state changed: ok
+6141:M 25 Mar 2025 19:44:40.909 * Starting BGSAVE for SYNC with target: replicas sockets
+6141:M 25 Mar 2025 19:44:40.911 * Background RDB transfer started by pid 6189
+6189:C 25 Mar 2025 19:44:40.916 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+6141:M 25 Mar 2025 19:44:40.916 # Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+6141:M 25 Mar 2025 19:44:41.012 * Background RDB transfer terminated with success
+6141:M 25 Mar 2025 19:44:41.012 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from slave to enable streaming
+6141:M 25 Mar 2025 19:44:41.012 * Synchronization with replica 127.0.0.1:7003 succeeded
+10844:C 27 Mar 2025 14:01:33.997 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+10844:C 27 Mar 2025 14:01:34.023 # Redis version=7.0.15, bits=64, commit=00000000, modified=0, pid=10844, just started
+10844:C 27 Mar 2025 14:01:34.023 # Configuration loaded
+10844:M 27 Mar 2025 14:01:34.024 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+10844:M 27 Mar 2025 14:01:34.024 * monotonic clock: POSIX clock_gettime
+10844:M 27 Mar 2025 14:01:34.196 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+10844:M 27 Mar 2025 14:01:34.197 * Running mode=cluster, port=7001.
+10844:M 27 Mar 2025 14:01:34.197 # Server initialized
+10844:M 27 Mar 2025 14:01:34.197 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+10844:M 27 Mar 2025 14:01:34.499 * Reading RDB base file on AOF loading...
+10844:M 27 Mar 2025 14:01:34.499 * Loading RDB produced by version 7.0.15
+10844:M 27 Mar 2025 14:01:34.499 * RDB age 351383 seconds
+10844:M 27 Mar 2025 14:01:34.499 * RDB memory usage when created 1.53 Mb
+10844:M 27 Mar 2025 14:01:34.499 * RDB is base AOF
+10844:M 27 Mar 2025 14:01:34.499 * Done loading RDB, keys loaded: 0, keys expired: 0.
+10844:M 27 Mar 2025 14:01:34.500 * DB loaded from base file appendonly.aof.1.base.rdb: 0.169 seconds
+10844:M 27 Mar 2025 14:01:34.500 * DB loaded from append only file: 0.169 seconds
+10844:M 27 Mar 2025 14:01:34.500 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+10844:M 27 Mar 2025 14:01:34.501 * Ready to accept connections
+10844:M 27 Mar 2025 14:01:35.674 * Replica 127.0.0.1:7003 asks for synchronization
+10844:M 27 Mar 2025 14:01:35.674 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'fefc8b20982e3544e956550d5d17dc9db152afd5', my replication IDs are '408601edf373748a86d211c17643a2ae7d8a3b12' and '0000000000000000000000000000000000000000')
+10844:M 27 Mar 2025 14:01:35.674 * Replication backlog created, my new replication IDs are '625a3ac97620f8200e09b67f3c734d75c18221bd' and '0000000000000000000000000000000000000000'
+10844:M 27 Mar 2025 14:01:35.674 * Delay next BGSAVE for diskless SYNC
+10844:M 27 Mar 2025 14:01:36.553 # Cluster state changed: ok
+10844:M 27 Mar 2025 14:01:40.581 * Starting BGSAVE for SYNC with target: replicas sockets
+10844:M 27 Mar 2025 14:01:40.583 * Background RDB transfer started by pid 10890
+10890:C 27 Mar 2025 14:01:40.588 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+10844:M 27 Mar 2025 14:01:40.588 # Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+10844:M 27 Mar 2025 14:01:40.684 * Background RDB transfer terminated with success
+10844:M 27 Mar 2025 14:01:40.684 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from slave to enable streaming
+10844:M 27 Mar 2025 14:01:40.684 * Synchronization with replica 127.0.0.1:7003 succeeded
+7061:C 28 Mar 2025 07:49:49.656 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+7061:C 28 Mar 2025 07:49:49.725 # Redis version=7.0.15, bits=64, commit=00000000, modified=0, pid=7061, just started
+7061:C 28 Mar 2025 07:49:49.725 # Configuration loaded
+7061:M 28 Mar 2025 07:49:49.727 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+7061:M 28 Mar 2025 07:49:49.727 * monotonic clock: POSIX clock_gettime
+7061:M 28 Mar 2025 07:49:49.803 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+7061:M 28 Mar 2025 07:49:49.805 * Running mode=cluster, port=7001.
+7061:M 28 Mar 2025 07:49:49.805 # Server initialized
+7061:M 28 Mar 2025 07:49:49.805 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+7061:M 28 Mar 2025 07:49:49.881 * Reading RDB base file on AOF loading...
+7061:M 28 Mar 2025 07:49:49.881 * Loading RDB produced by version 7.0.15
+7061:M 28 Mar 2025 07:49:49.881 * RDB age 415478 seconds
+7061:M 28 Mar 2025 07:49:49.881 * RDB memory usage when created 1.53 Mb
+7061:M 28 Mar 2025 07:49:49.881 * RDB is base AOF
+7061:M 28 Mar 2025 07:49:49.881 * Done loading RDB, keys loaded: 0, keys expired: 0.
+7061:M 28 Mar 2025 07:49:49.881 * DB loaded from base file appendonly.aof.1.base.rdb: 0.008 seconds
+7061:M 28 Mar 2025 07:49:49.881 * DB loaded from append only file: 0.008 seconds
+7061:M 28 Mar 2025 07:49:49.881 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+7061:M 28 Mar 2025 07:49:49.882 * Ready to accept connections
+7061:M 28 Mar 2025 07:49:50.603 * Replica 127.0.0.1:7003 asks for synchronization
+7061:M 28 Mar 2025 07:49:50.603 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'c45d40a554ab16216531bc3eb69ea04904500b9d', my replication IDs are '942a8b672979ba372716dff7b64ca301458b368e' and '0000000000000000000000000000000000000000')
+7061:M 28 Mar 2025 07:49:50.603 * Replication backlog created, my new replication IDs are '8d04b7294e9f8511473d710ab766d15b01a19741' and '0000000000000000000000000000000000000000'
+7061:M 28 Mar 2025 07:49:50.603 * Delay next BGSAVE for diskless SYNC
+7061:M 28 Mar 2025 07:49:51.910 # Cluster state changed: ok
+7061:M 28 Mar 2025 07:49:55.232 * Starting BGSAVE for SYNC with target: replicas sockets
+7061:M 28 Mar 2025 07:49:55.234 * Background RDB transfer started by pid 7108
+7108:C 28 Mar 2025 07:49:55.240 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+7061:M 28 Mar 2025 07:49:55.240 # Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+7061:M 28 Mar 2025 07:49:55.335 * Background RDB transfer terminated with success
+7061:M 28 Mar 2025 07:49:55.335 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from slave to enable streaming
+7061:M 28 Mar 2025 07:49:55.335 * Synchronization with replica 127.0.0.1:7003 succeeded
+7061:M 29 Mar 2025 00:51:35.153 * Background saving started by pid 43317
+43317:C 29 Mar 2025 00:51:35.681 * DB saved on disk
+43317:C 29 Mar 2025 00:51:35.684 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 1 MB
+7061:M 29 Mar 2025 00:51:35.721 * Background saving terminated with success
+7061:M 29 Mar 2025 00:51:51.929 * Background saving started by pid 43338
+43338:C 29 Mar 2025 00:51:52.233 * DB saved on disk
+43338:C 29 Mar 2025 00:51:52.237 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+7061:M 29 Mar 2025 00:51:52.333 * Background saving terminated with success
+7061:M 29 Mar 2025 00:52:24.590 * Background saving started by pid 43367
+43367:C 29 Mar 2025 00:52:24.937 * DB saved on disk
+43367:C 29 Mar 2025 00:52:24.942 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+7061:M 29 Mar 2025 00:52:24.969 * Background saving terminated with success
+7061:M 29 Mar 2025 00:53:55.037 * Background saving started by pid 43440
+43440:C 29 Mar 2025 00:53:55.377 * DB saved on disk
+43440:C 29 Mar 2025 00:53:55.381 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+7061:M 29 Mar 2025 00:53:55.401 * Background saving terminated with success
+7061:M 29 Mar 2025 00:54:06.928 * Background saving started by pid 43450
+43450:C 29 Mar 2025 00:54:07.248 * DB saved on disk
+43450:C 29 Mar 2025 00:54:07.253 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+7061:M 29 Mar 2025 00:54:07.285 * Background saving terminated with success
+7061:M 29 Mar 2025 00:55:30.854 * Background saving started by pid 43505
+43505:C 29 Mar 2025 00:55:31.142 * DB saved on disk
+43505:C 29 Mar 2025 00:55:31.147 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+7061:M 29 Mar 2025 00:55:31.164 * Background saving terminated with success
+7061:M 29 Mar 2025 00:55:46.946 * Background saving started by pid 43519
+43519:C 29 Mar 2025 00:55:47.267 * DB saved on disk
+43519:C 29 Mar 2025 00:55:47.272 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+7061:M 29 Mar 2025 00:55:47.274 * Background saving terminated with success
+7061:M 29 Mar 2025 00:56:53.204 * Background saving started by pid 43580
+43580:C 29 Mar 2025 00:56:53.498 * DB saved on disk
+43580:C 29 Mar 2025 00:56:53.503 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+7061:M 29 Mar 2025 00:56:53.525 * Background saving terminated with success
+7061:M 29 Mar 2025 00:56:58.519 * Background saving started by pid 43585
+43585:C 29 Mar 2025 00:56:58.826 * DB saved on disk
+43585:C 29 Mar 2025 00:56:58.831 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+7061:M 29 Mar 2025 00:56:58.866 * Background saving terminated with success
+8054:C 29 Mar 2025 17:16:14.822 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+8054:C 29 Mar 2025 17:16:14.892 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+8054:C 29 Mar 2025 17:16:14.892 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+8054:C 29 Mar 2025 17:16:14.892 * Redis version=7.4.1, bits=64, commit=00000000, modified=0, pid=8054, just started
+8054:C 29 Mar 2025 17:16:14.892 * Configuration loaded
+8054:M 29 Mar 2025 17:16:14.894 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+8054:M 29 Mar 2025 17:16:14.894 * monotonic clock: POSIX clock_gettime
+8054:M 29 Mar 2025 17:16:14.897 * Running mode=cluster, port=7001.
+8054:M 29 Mar 2025 17:16:15.081 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+8054:M 29 Mar 2025 17:16:15.082 * Server initialized
+8054:M 29 Mar 2025 17:16:15.465 * Reading RDB base file on AOF loading...
+8054:M 29 Mar 2025 17:16:15.466 * Loading RDB produced by version 7.0.15
+8054:M 29 Mar 2025 17:16:15.466 * RDB age 535864 seconds
+8054:M 29 Mar 2025 17:16:15.466 * RDB memory usage when created 1.53 Mb
+8054:M 29 Mar 2025 17:16:15.466 * RDB is base AOF
+8054:M 29 Mar 2025 17:16:15.466 * Done loading RDB, keys loaded: 0, keys expired: 0.
+8054:M 29 Mar 2025 17:16:15.467 * DB loaded from base file appendonly.aof.1.base.rdb: 0.160 seconds
+8054:M 29 Mar 2025 17:16:15.588 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.120 seconds
+8054:M 29 Mar 2025 17:16:15.588 * DB loaded from append only file: 0.280 seconds
+8054:M 29 Mar 2025 17:16:15.588 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+8054:M 29 Mar 2025 17:16:15.588 * Ready to accept connections tcp
+8054:M 29 Mar 2025 17:16:16.953 * Replica 127.0.0.1:7003 asks for synchronization
+8054:M 29 Mar 2025 17:16:16.953 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '5c4486cda75dcc1db8992a34d093b697bd22ccb9', my replication IDs are '46aaa23619a2ae8cbf2001f70f6de58671f906c8' and '0000000000000000000000000000000000000000')
+8054:M 29 Mar 2025 17:16:16.953 * Replication backlog created, my new replication IDs are 'db0d2ed6d3348dc8a7bac7ff6a76a74f0602c5e3' and '0000000000000000000000000000000000000000'
+8054:M 29 Mar 2025 17:16:16.953 * Delay next BGSAVE for diskless SYNC
+8054:M 29 Mar 2025 17:16:17.685 * Cluster state changed: ok
+8054:M 29 Mar 2025 17:16:21.832 * Starting BGSAVE for SYNC with target: replicas sockets
+8054:M 29 Mar 2025 17:16:21.834 * Background RDB transfer started by pid 8111
+8111:C 29 Mar 2025 17:16:21.841 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+8054:M 29 Mar 2025 17:16:21.841 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+8054:M 29 Mar 2025 17:16:21.936 * Background RDB transfer terminated with success
+8054:M 29 Mar 2025 17:16:21.937 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+8054:M 29 Mar 2025 17:16:21.937 * Synchronization with replica 127.0.0.1:7003 succeeded
+8054:M 29 Mar 2025 18:16:15.047 * 1 changes in 3600 seconds. Saving...
+8054:M 29 Mar 2025 18:16:15.050 * Background saving started by pid 10665
+10665:C 29 Mar 2025 18:16:15.373 * DB saved on disk
+10665:C 29 Mar 2025 18:16:15.380 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+8054:M 29 Mar 2025 18:16:15.454 * Background saving terminated with success
+8054:M 29 Mar 2025 19:16:16.096 * 1 changes in 3600 seconds. Saving...
+8054:M 29 Mar 2025 19:16:16.174 * Background saving started by pid 12772
+12772:C 29 Mar 2025 19:16:16.505 * DB saved on disk
+12772:C 29 Mar 2025 19:16:16.508 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+8054:M 29 Mar 2025 19:16:16.580 * Background saving terminated with success
+8054:M 29 Mar 2025 20:24:55.596 * 1 changes in 3600 seconds. Saving...
+8054:M 29 Mar 2025 20:24:55.597 * Background saving started by pid 15178
+15178:C 29 Mar 2025 20:24:56.119 * DB saved on disk
+15178:C 29 Mar 2025 20:24:56.123 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 1 MB
+8054:M 29 Mar 2025 20:24:56.206 * Background saving terminated with success
+8054:M 29 Mar 2025 20:29:57.062 * 100 changes in 300 seconds. Saving...
+8054:M 29 Mar 2025 20:29:57.064 * Background saving started by pid 15328
+15328:C 29 Mar 2025 20:29:57.268 * DB saved on disk
+15328:C 29 Mar 2025 20:29:57.270 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+8054:M 29 Mar 2025 20:29:57.368 * Background saving terminated with success
+8054:M 29 Mar 2025 20:35:47.280 * 100 changes in 300 seconds. Saving...
+8054:M 29 Mar 2025 20:35:47.280 * Background saving started by pid 15493
+15493:C 29 Mar 2025 20:35:47.426 * DB saved on disk
+15493:C 29 Mar 2025 20:35:47.429 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+8054:M 29 Mar 2025 20:35:47.497 * Background saving terminated with success
+8054:M 29 Mar 2025 21:35:48.097 * 1 changes in 3600 seconds. Saving...
+8054:M 29 Mar 2025 21:35:48.098 * Background saving started by pid 17114
+17114:C 29 Mar 2025 21:35:48.210 * DB saved on disk
+17114:C 29 Mar 2025 21:35:48.212 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+8054:M 29 Mar 2025 21:35:48.301 * Background saving terminated with success
+8054:M 30 Mar 2025 01:46:21.666 * 1 changes in 3600 seconds. Saving...
+8054:M 30 Mar 2025 01:46:21.951 * Background saving started by pid 30049
+30049:C 30 Mar 2025 01:46:22.445 * DB saved on disk
+30049:C 30 Mar 2025 01:46:22.448 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 1 MB
+8054:M 30 Mar 2025 01:46:22.459 * Background saving terminated with success
+8054:M 30 Mar 2025 02:46:23.042 * 1 changes in 3600 seconds. Saving...
+8054:M 30 Mar 2025 02:46:23.071 * Background saving started by pid 32190
+32190:C 30 Mar 2025 02:46:23.250 * DB saved on disk
+32190:C 30 Mar 2025 02:46:23.253 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+8054:M 30 Mar 2025 02:46:23.274 * Background saving terminated with success
+5483:C 31 Mar 2025 07:55:00.253 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+5483:C 31 Mar 2025 07:55:00.302 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+5483:C 31 Mar 2025 07:55:00.302 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5483:C 31 Mar 2025 07:55:00.302 * Redis version=7.4.1, bits=64, commit=00000000, modified=0, pid=5483, just started
+5483:C 31 Mar 2025 07:55:00.302 * Configuration loaded
+5483:M 31 Mar 2025 07:55:00.304 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+5483:M 31 Mar 2025 07:55:00.304 * monotonic clock: POSIX clock_gettime
+5483:M 31 Mar 2025 07:55:00.307 * Running mode=cluster, port=7001.
+5483:M 31 Mar 2025 07:55:00.320 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+5483:M 31 Mar 2025 07:55:00.321 * Server initialized
+5483:M 31 Mar 2025 07:55:00.383 * Reading RDB base file on AOF loading...
+5483:M 31 Mar 2025 07:55:00.383 * Loading RDB produced by version 7.0.15
+5483:M 31 Mar 2025 07:55:00.383 * RDB age 674989 seconds
+5483:M 31 Mar 2025 07:55:00.383 * RDB memory usage when created 1.53 Mb
+5483:M 31 Mar 2025 07:55:00.383 * RDB is base AOF
+5483:M 31 Mar 2025 07:55:00.383 * Done loading RDB, keys loaded: 0, keys expired: 0.
+5483:M 31 Mar 2025 07:55:00.384 * DB loaded from base file appendonly.aof.1.base.rdb: 0.015 seconds
+5483:M 31 Mar 2025 07:55:00.445 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.061 seconds
+5483:M 31 Mar 2025 07:55:00.446 * DB loaded from append only file: 0.077 seconds
+5483:M 31 Mar 2025 07:55:00.446 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+5483:M 31 Mar 2025 07:55:00.446 * Ready to accept connections tcp
+5483:M 31 Mar 2025 07:55:01.654 * Replica 127.0.0.1:7003 asks for synchronization
+5483:M 31 Mar 2025 07:55:01.655 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'd6868d1472beb84366ecebe9c18fba5792b4ae5d', my replication IDs are 'b9ea6024fbe82fcde58c7e71b78b0d9e620dd6f4' and '0000000000000000000000000000000000000000')
+5483:M 31 Mar 2025 07:55:01.655 * Replication backlog created, my new replication IDs are 'e14dc465043a5a57701dd5816bfbeebfef86c279' and '0000000000000000000000000000000000000000'
+5483:M 31 Mar 2025 07:55:01.655 * Delay next BGSAVE for diskless SYNC
+5483:M 31 Mar 2025 07:55:02.515 * Cluster state changed: ok
+5483:M 31 Mar 2025 07:55:06.262 * Starting BGSAVE for SYNC with target: replicas sockets
+5483:M 31 Mar 2025 07:55:06.263 * Background RDB transfer started by pid 5542
+5542:C 31 Mar 2025 07:55:06.271 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5483:M 31 Mar 2025 07:55:06.271 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+5483:M 31 Mar 2025 07:55:06.365 * Background RDB transfer terminated with success
+5483:M 31 Mar 2025 07:55:06.365 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+5483:M 31 Mar 2025 07:55:06.365 * Synchronization with replica 127.0.0.1:7003 succeeded
+5483:M 31 Mar 2025 08:00:01.087 * 100 changes in 300 seconds. Saving...
+5483:M 31 Mar 2025 08:00:01.087 * Background saving started by pid 5563
+5563:C 31 Mar 2025 08:00:01.483 * DB saved on disk
+5563:C 31 Mar 2025 08:00:01.487 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+5483:M 31 Mar 2025 08:00:01.495 * Background saving terminated with success
+5354:C 01 Apr 2025 13:50:51.507 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+5354:C 01 Apr 2025 13:50:51.608 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+5354:C 01 Apr 2025 13:50:51.608 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5354:C 01 Apr 2025 13:50:51.608 * Redis version=7.4.1, bits=64, commit=00000000, modified=0, pid=5354, just started
+5354:C 01 Apr 2025 13:50:51.608 * Configuration loaded
+5354:M 01 Apr 2025 13:50:51.614 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+5354:M 01 Apr 2025 13:50:51.614 * monotonic clock: POSIX clock_gettime
+5354:M 01 Apr 2025 13:50:51.622 * Running mode=cluster, port=7001.
+5354:M 01 Apr 2025 13:50:51.644 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+5354:M 01 Apr 2025 13:50:51.645 * Server initialized
+5354:M 01 Apr 2025 13:50:51.943 * Reading RDB base file on AOF loading...
+5354:M 01 Apr 2025 13:50:51.943 * Loading RDB produced by version 7.0.15
+5354:M 01 Apr 2025 13:50:51.943 * RDB age 782740 seconds
+5354:M 01 Apr 2025 13:50:51.943 * RDB memory usage when created 1.53 Mb
+5354:M 01 Apr 2025 13:50:51.943 * RDB is base AOF
+5354:M 01 Apr 2025 13:50:51.943 * Done loading RDB, keys loaded: 0, keys expired: 0.
+5354:M 01 Apr 2025 13:50:51.944 * DB loaded from base file appendonly.aof.1.base.rdb: 0.235 seconds
+5354:M 01 Apr 2025 13:50:52.171 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.227 seconds
+5354:M 01 Apr 2025 13:50:52.171 * DB loaded from append only file: 0.461 seconds
+5354:M 01 Apr 2025 13:50:52.171 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+5354:M 01 Apr 2025 13:50:52.171 * Ready to accept connections tcp
+5354:M 01 Apr 2025 13:50:53.675 * Replica 127.0.0.1:7003 asks for synchronization
+5354:M 01 Apr 2025 13:50:53.675 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '5847ce7134174f06dd209cb0caed880c89608f72', my replication IDs are '5e8ce4197910e6d9b8bb7f6b5403a9d627615005' and '0000000000000000000000000000000000000000')
+5354:M 01 Apr 2025 13:50:53.675 * Replication backlog created, my new replication IDs are '716b7bcc2f93227431ca481a6d71b1f7faedcd5d' and '0000000000000000000000000000000000000000'
+5354:M 01 Apr 2025 13:50:53.675 * Delay next BGSAVE for diskless SYNC
+5354:M 01 Apr 2025 13:50:54.257 * Cluster state changed: ok
+5354:M 01 Apr 2025 13:50:58.407 * Starting BGSAVE for SYNC with target: replicas sockets
+5354:M 01 Apr 2025 13:50:58.408 * Background RDB transfer started by pid 5409
+5409:C 01 Apr 2025 13:50:58.415 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5354:M 01 Apr 2025 13:50:58.415 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+5354:M 01 Apr 2025 13:50:58.509 * Background RDB transfer terminated with success
+5354:M 01 Apr 2025 13:50:58.509 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+5354:M 01 Apr 2025 13:50:58.509 * Synchronization with replica 127.0.0.1:7003 succeeded
+5354:M 01 Apr 2025 13:55:52.011 * 100 changes in 300 seconds. Saving...
+5354:M 01 Apr 2025 13:55:52.012 * Background saving started by pid 5437
+5437:C 01 Apr 2025 13:55:52.247 * DB saved on disk
+5437:C 01 Apr 2025 13:55:52.250 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5354:M 01 Apr 2025 13:55:52.316 * Background saving terminated with success
+5405:C 01 Apr 2025 20:37:09.081 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+5405:C 01 Apr 2025 20:37:09.211 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+5405:C 01 Apr 2025 20:37:09.211 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5405:C 01 Apr 2025 20:37:09.211 * Redis version=7.4.1, bits=64, commit=00000000, modified=0, pid=5405, just started
+5405:C 01 Apr 2025 20:37:09.211 * Configuration loaded
+5405:M 01 Apr 2025 20:37:09.214 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+5405:M 01 Apr 2025 20:37:09.214 * monotonic clock: POSIX clock_gettime
+5405:M 01 Apr 2025 20:37:09.219 * Running mode=cluster, port=7001.
+5405:M 01 Apr 2025 20:37:09.298 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+5405:M 01 Apr 2025 20:37:09.300 * Server initialized
+5405:M 01 Apr 2025 20:37:09.374 * Reading RDB base file on AOF loading...
+5405:M 01 Apr 2025 20:37:09.374 * Loading RDB produced by version 7.0.15
+5405:M 01 Apr 2025 20:37:09.375 * RDB age 807118 seconds
+5405:M 01 Apr 2025 20:37:09.375 * RDB memory usage when created 1.53 Mb
+5405:M 01 Apr 2025 20:37:09.375 * RDB is base AOF
+5405:M 01 Apr 2025 20:37:09.375 * Done loading RDB, keys loaded: 0, keys expired: 0.
+5405:M 01 Apr 2025 20:37:09.376 * DB loaded from base file appendonly.aof.1.base.rdb: 0.035 seconds
+5405:M 01 Apr 2025 20:37:09.475 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.099 seconds
+5405:M 01 Apr 2025 20:37:09.475 * DB loaded from append only file: 0.133 seconds
+5405:M 01 Apr 2025 20:37:09.475 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+5405:M 01 Apr 2025 20:37:09.475 * Ready to accept connections tcp
+5405:M 01 Apr 2025 20:37:11.282 * Replica 127.0.0.1:7003 asks for synchronization
+5405:M 01 Apr 2025 20:37:11.282 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '659dc2e833a60d77c7490054232520c2b3282448', my replication IDs are 'f604c17b319568f95d21c30c3a0c02cd535fb951' and '0000000000000000000000000000000000000000')
+5405:M 01 Apr 2025 20:37:11.282 * Replication backlog created, my new replication IDs are '65f74391a320868874c42f46989cf1e1c38db619' and '0000000000000000000000000000000000000000'
+5405:M 01 Apr 2025 20:37:11.282 * Delay next BGSAVE for diskless SYNC
+5405:M 01 Apr 2025 20:37:11.484 * Cluster state changed: ok
+5405:M 01 Apr 2025 20:37:16.343 * Starting BGSAVE for SYNC with target: replicas sockets
+5405:M 01 Apr 2025 20:37:16.345 * Background RDB transfer started by pid 5462
+5462:C 01 Apr 2025 20:37:16.353 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5405:M 01 Apr 2025 20:37:16.353 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+5405:M 01 Apr 2025 20:37:16.447 * Background RDB transfer terminated with success
+5405:M 01 Apr 2025 20:37:16.447 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+5405:M 01 Apr 2025 20:37:16.447 * Synchronization with replica 127.0.0.1:7003 succeeded
+5405:M 01 Apr 2025 20:42:10.079 * 100 changes in 300 seconds. Saving...
+5405:M 01 Apr 2025 20:42:10.081 * Background saving started by pid 5500
+5500:C 01 Apr 2025 20:42:10.414 * DB saved on disk
+5500:C 01 Apr 2025 20:42:10.417 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+5405:M 01 Apr 2025 20:42:10.489 * Background saving terminated with success
+5405:M 01 Apr 2025 23:14:54.935 # Cluster state changed: fail
+5405:M 02 Apr 2025 02:09:31.795 * Failover auth granted to 19eeb62d289a5c6f1f6c12fc69bcd1605b7372a9 () for epoch 9
+5405:M 02 Apr 2025 02:09:33.165 * A failover occurred in shard 5612a6fa916a8c6b38a6b3cd81aae62dfcf88186; node ab962341f50fe783ba39cc3349d98dafd6af4fce () lost 0 slot(s) to node 19eeb62d289a5c6f1f6c12fc69bcd1605b7372a9 () with a config epoch of 9
+5405:M 02 Apr 2025 02:15:36.971 * Failover auth granted to a262d95b42ad7c522d3cda5c17b662d4c660bcc9 () for epoch 10
+5405:M 02 Apr 2025 02:15:37.220 * Failover auth granted to ab962341f50fe783ba39cc3349d98dafd6af4fce () for epoch 11
+5405:M 02 Apr 2025 02:15:37.220 * Manual failover requested by replica 781976b22e4ae34fe22783c8ff2fded002b8b66e ().
+5405:M 02 Apr 2025 02:15:37.820 * Failover auth granted to 56230e2f41d18a116d9ce093f5f3df8c6554acd9 () for epoch 12
+5405:M 02 Apr 2025 02:15:38.266 * Failover auth granted to 781976b22e4ae34fe22783c8ff2fded002b8b66e () for epoch 13
+5405:M 02 Apr 2025 02:15:38.615 * A failover occurred in shard 5612a6fa916a8c6b38a6b3cd81aae62dfcf88186; node 19eeb62d289a5c6f1f6c12fc69bcd1605b7372a9 () lost 0 slot(s) to node ab962341f50fe783ba39cc3349d98dafd6af4fce () with a config epoch of 11
+5405:M 02 Apr 2025 02:15:38.615 * A failover occurred in shard 5bcc9e99d50d7cdcbaceb7e50376bc15351b8816; node f5ff27b95b0e28eb296332275b3a8cf60810b399 () lost 0 slot(s) to node a262d95b42ad7c522d3cda5c17b662d4c660bcc9 () with a config epoch of 10
+5405:M 02 Apr 2025 02:15:38.978 * Configuration change detected. Reconfiguring myself as a replica of 781976b22e4ae34fe22783c8ff2fded002b8b66e ()
+5405:S 02 Apr 2025 02:15:38.979 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+5405:S 02 Apr 2025 02:15:38.979 * Connecting to MASTER 127.0.0.1:7003
+5405:S 02 Apr 2025 02:15:38.979 * MASTER <-> REPLICA sync started
+5405:S 02 Apr 2025 02:15:38.979 * Connection with replica 127.0.0.1:7003 lost.
+5405:S 02 Apr 2025 02:15:38.981 * Cluster state changed: ok
+5405:S 02 Apr 2025 02:15:39.408 * A failover occurred in shard 1d32927d5c7e3013c31a10f303ecf9f25a16e55e; node c45f839782e3434011c8148e4f50dd0e09e3ea54 () lost 0 slot(s) to node 56230e2f41d18a116d9ce093f5f3df8c6554acd9 () with a config epoch of 12
+5405:S 02 Apr 2025 02:15:39.409 * Non blocking connect for SYNC fired the event.
+5405:S 02 Apr 2025 02:15:39.760 * Master replied to PING, replication can continue...
+5405:S 02 Apr 2025 02:15:39.987 * Trying a partial resynchronization (request 65f74391a320868874c42f46989cf1e1c38db619:28057).
+5405:S 02 Apr 2025 02:15:39.988 * Successful partial resynchronization with master.
+5405:S 02 Apr 2025 02:15:39.988 * Master replication ID changed to 090bd69dd66f8e066590408e5ab474b2815bf9cf
+5405:S 02 Apr 2025 02:15:39.988 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+5405:S 02 Apr 2025 02:16:30.413 * Manual failover user request accepted.
+5405:S 02 Apr 2025 02:16:30.849 * Received replication offset for paused master manual failover: 28126
+5405:S 02 Apr 2025 02:16:30.850 * All master replication stream processed, manual failover can start.
+5405:S 02 Apr 2025 02:16:30.850 * Start of election delayed for 0 milliseconds (rank #0, offset 28126).
+5405:S 02 Apr 2025 02:16:30.850 * Starting a failover election for epoch 17.
+5405:S 02 Apr 2025 02:16:31.293 * Currently unable to failover: Waiting for votes, but majority still not reached.
+5405:S 02 Apr 2025 02:16:31.293 * Needed quorum: 3. Number of votes received so far: 2
+5405:S 02 Apr 2025 02:16:31.564 * Failover election won: I'm the new master.
+5405:S 02 Apr 2025 02:16:31.564 * configEpoch set to 17 after successful failover
+5405:M 02 Apr 2025 02:16:31.564 * Connection with master lost.
+5405:M 02 Apr 2025 02:16:31.564 * Caching the disconnected master state.
+5405:M 02 Apr 2025 02:16:31.564 * Discarding previously cached master state.
+5405:M 02 Apr 2025 02:16:31.564 * Setting secondary replication ID to 090bd69dd66f8e066590408e5ab474b2815bf9cf, valid up to offset: 28127. New replication ID is 5f2cc38a4e43eeced9b0a6ba22dab46599c5ca1e
+5405:M 02 Apr 2025 02:16:31.877 * A failover occurred in shard 5bcc9e99d50d7cdcbaceb7e50376bc15351b8816; node a262d95b42ad7c522d3cda5c17b662d4c660bcc9 () lost 0 slot(s) to node f5ff27b95b0e28eb296332275b3a8cf60810b399 () with a config epoch of 14
+5405:M 02 Apr 2025 02:16:32.830 * A failover occurred in shard 1d32927d5c7e3013c31a10f303ecf9f25a16e55e; node 56230e2f41d18a116d9ce093f5f3df8c6554acd9 () lost 0 slot(s) to node c45f839782e3434011c8148e4f50dd0e09e3ea54 () with a config epoch of 15
+5405:M 02 Apr 2025 02:16:33.231 * Replica 127.0.0.1:7003 asks for synchronization
+5405:M 02 Apr 2025 02:16:33.231 * Partial resynchronization request from 127.0.0.1:7003 accepted. Sending 0 bytes of backlog starting from offset 28127.
+5405:M 02 Apr 2025 02:16:33.586 * A failover occurred in shard 5612a6fa916a8c6b38a6b3cd81aae62dfcf88186; node ab962341f50fe783ba39cc3349d98dafd6af4fce () lost 0 slot(s) to node 19eeb62d289a5c6f1f6c12fc69bcd1605b7372a9 () with a config epoch of 16
+5405:M 02 Apr 2025 02:16:34.520 * A failover occurred in shard d83db9ffb7811488dbd8c4e6817b72fbcd24aa1a; node 781976b22e4ae34fe22783c8ff2fded002b8b66e () lost 0 slot(s) to node 4f9654d41989b505dd8d9f424c411f4a473bda63 () with a config epoch of 17
+5405:M 02 Apr 2025 02:16:53.340 * Failover auth granted to a262d95b42ad7c522d3cda5c17b662d4c660bcc9 () for epoch 18
+5405:M 02 Apr 2025 02:16:53.729 * Manual failover requested by replica 781976b22e4ae34fe22783c8ff2fded002b8b66e ().
+5405:M 02 Apr 2025 02:16:53.730 * Failover auth granted to ab962341f50fe783ba39cc3349d98dafd6af4fce () for epoch 19
+5405:M 02 Apr 2025 02:16:54.635 * Failover auth granted to 781976b22e4ae34fe22783c8ff2fded002b8b66e () for epoch 20
+5405:M 02 Apr 2025 02:16:55.065 # Failover auth denied to 56230e2f41d18a116d9ce093f5f3df8c6554acd9 (): already voted for epoch 20
+5405:M 02 Apr 2025 02:16:55.418 * Connection with replica 127.0.0.1:7003 lost.
+5405:M 02 Apr 2025 02:16:55.419 * A failover occurred in shard 5bcc9e99d50d7cdcbaceb7e50376bc15351b8816; node f5ff27b95b0e28eb296332275b3a8cf60810b399 () lost 0 slot(s) to node a262d95b42ad7c522d3cda5c17b662d4c660bcc9 () with a config epoch of 18
+5405:M 02 Apr 2025 02:16:55.704 * Configuration change detected. Reconfiguring myself as a replica of 781976b22e4ae34fe22783c8ff2fded002b8b66e ()
+5405:S 02 Apr 2025 02:16:55.704 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+5405:S 02 Apr 2025 02:16:55.704 * Connecting to MASTER 127.0.0.1:7003
+5405:S 02 Apr 2025 02:16:55.704 * MASTER <-> REPLICA sync started
+5405:S 02 Apr 2025 02:16:55.705 * A failover occurred in shard 5612a6fa916a8c6b38a6b3cd81aae62dfcf88186; node 19eeb62d289a5c6f1f6c12fc69bcd1605b7372a9 () lost 0 slot(s) to node ab962341f50fe783ba39cc3349d98dafd6af4fce () with a config epoch of 19
+5405:S 02 Apr 2025 02:16:56.056 * Non blocking connect for SYNC fired the event.
+5405:S 02 Apr 2025 02:16:56.488 * Master replied to PING, replication can continue...
+5405:S 02 Apr 2025 02:16:56.489 * Trying a partial resynchronization (request 5f2cc38a4e43eeced9b0a6ba22dab46599c5ca1e:28155).
+5405:S 02 Apr 2025 02:16:56.490 * Successful partial resynchronization with master.
+5405:S 02 Apr 2025 02:16:56.490 * Master replication ID changed to 38cef5761ed8dc4378a3f9331a4be21200e943f7
+5405:S 02 Apr 2025 02:16:56.490 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+5405:S 02 Apr 2025 02:17:19.444 * Manual failover user request accepted.
+5405:S 02 Apr 2025 02:17:19.929 * Received replication offset for paused master manual failover: 28182
+5405:S 02 Apr 2025 02:17:19.929 * All master replication stream processed, manual failover can start.
+5405:S 02 Apr 2025 02:17:19.929 * Start of election delayed for 0 milliseconds (rank #0, offset 28182).
+5405:S 02 Apr 2025 02:17:19.929 * Starting a failover election for epoch 23.
+5405:S 02 Apr 2025 02:17:20.364 * Currently unable to failover: Waiting for votes, but majority still not reached.
+5405:S 02 Apr 2025 02:17:20.364 * Needed quorum: 3. Number of votes received so far: 1
+5405:S 02 Apr 2025 02:17:20.716 * Failover election won: I'm the new master.
+5405:S 02 Apr 2025 02:17:20.716 * configEpoch set to 23 after successful failover
+5405:M 02 Apr 2025 02:17:20.716 * Connection with master lost.
+5405:M 02 Apr 2025 02:17:20.716 * Caching the disconnected master state.
+5405:M 02 Apr 2025 02:17:20.716 * Discarding previously cached master state.
+5405:M 02 Apr 2025 02:17:20.716 * Setting secondary replication ID to 38cef5761ed8dc4378a3f9331a4be21200e943f7, valid up to offset: 28183. New replication ID is cb6e48288a8a8fb3b9242fa010f53c788ed549fb
+5405:M 02 Apr 2025 02:17:20.988 * Failover auth granted to 56230e2f41d18a116d9ce093f5f3df8c6554acd9 () for epoch 24
+5405:M 02 Apr 2025 02:17:22.244 * Replica 127.0.0.1:7003 asks for synchronization
+5405:M 02 Apr 2025 02:17:22.244 * Partial resynchronization request from 127.0.0.1:7003 accepted. Sending 0 bytes of backlog starting from offset 28183.
+5405:M 02 Apr 2025 02:17:22.548 * A failover occurred in shard d83db9ffb7811488dbd8c4e6817b72fbcd24aa1a; node 781976b22e4ae34fe22783c8ff2fded002b8b66e () lost 0 slot(s) to node 4f9654d41989b505dd8d9f424c411f4a473bda63 () with a config epoch of 23
+5405:M 02 Apr 2025 02:17:22.895 * A failover occurred in shard 1d32927d5c7e3013c31a10f303ecf9f25a16e55e; node c45f839782e3434011c8148e4f50dd0e09e3ea54 () lost 0 slot(s) to node 56230e2f41d18a116d9ce093f5f3df8c6554acd9 () with a config epoch of 24
+5405:M 02 Apr 2025 02:17:22.896 * A failover occurred in shard 5612a6fa916a8c6b38a6b3cd81aae62dfcf88186; node ab962341f50fe783ba39cc3349d98dafd6af4fce () lost 0 slot(s) to node 19eeb62d289a5c6f1f6c12fc69bcd1605b7372a9 () with a config epoch of 22
+5405:M 02 Apr 2025 02:17:23.326 * A failover occurred in shard 5bcc9e99d50d7cdcbaceb7e50376bc15351b8816; node a262d95b42ad7c522d3cda5c17b662d4c660bcc9 () lost 0 slot(s) to node f5ff27b95b0e28eb296332275b3a8cf60810b399 () with a config epoch of 21
+5091:C 02 Apr 2025 10:55:19.448 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+5091:C 02 Apr 2025 10:55:19.489 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+5091:C 02 Apr 2025 10:55:19.490 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5091:C 02 Apr 2025 10:55:19.490 * Redis version=7.4.1, bits=64, commit=00000000, modified=0, pid=5091, just started
+5091:C 02 Apr 2025 10:55:19.490 * Configuration loaded
+5091:M 02 Apr 2025 10:55:19.492 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+5091:M 02 Apr 2025 10:55:19.492 * monotonic clock: POSIX clock_gettime
+5091:M 02 Apr 2025 10:55:19.499 * Running mode=cluster, port=7001.
+5091:M 02 Apr 2025 10:55:19.508 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+5091:M 02 Apr 2025 10:55:19.509 * Server initialized
+5091:M 02 Apr 2025 10:55:19.597 * Reading RDB base file on AOF loading...
+5091:M 02 Apr 2025 10:55:19.597 * Loading RDB produced by version 7.0.15
+5091:M 02 Apr 2025 10:55:19.597 * RDB age 858608 seconds
+5091:M 02 Apr 2025 10:55:19.597 * RDB memory usage when created 1.53 Mb
+5091:M 02 Apr 2025 10:55:19.597 * RDB is base AOF
+5091:M 02 Apr 2025 10:55:19.597 * Done loading RDB, keys loaded: 0, keys expired: 0.
+5091:M 02 Apr 2025 10:55:19.599 * DB loaded from base file appendonly.aof.1.base.rdb: 0.046 seconds
+5091:M 02 Apr 2025 10:55:19.698 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.099 seconds
+5091:M 02 Apr 2025 10:55:19.698 * DB loaded from append only file: 0.145 seconds
+5091:M 02 Apr 2025 10:55:19.698 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+5091:M 02 Apr 2025 10:55:19.698 * Ready to accept connections tcp
+5091:M 02 Apr 2025 10:55:20.759 * Replica 127.0.0.1:7003 asks for synchronization
+5091:M 02 Apr 2025 10:55:20.759 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '2dee180d7208228462d42d929fe297e749e95a4f', my replication IDs are 'a18594f01be1fd7a6252ae392d57817c9f0fea75' and '0000000000000000000000000000000000000000')
+5091:M 02 Apr 2025 10:55:20.759 * Replication backlog created, my new replication IDs are '46d3815984842be338f969d1ee0272e741e0b7f7' and '0000000000000000000000000000000000000000'
+5091:M 02 Apr 2025 10:55:20.759 * Delay next BGSAVE for diskless SYNC
+5091:M 02 Apr 2025 10:55:21.775 * Cluster state changed: ok
+5091:M 02 Apr 2025 10:55:25.418 * Starting BGSAVE for SYNC with target: replicas sockets
+5091:M 02 Apr 2025 10:55:25.420 * Background RDB transfer started by pid 5144
+5144:C 02 Apr 2025 10:55:25.427 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5091:M 02 Apr 2025 10:55:25.427 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+5091:M 02 Apr 2025 10:55:25.522 * Background RDB transfer terminated with success
+5091:M 02 Apr 2025 10:55:25.522 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+5091:M 02 Apr 2025 10:55:25.522 * Synchronization with replica 127.0.0.1:7003 succeeded
+5091:M 02 Apr 2025 11:00:20.037 * 100 changes in 300 seconds. Saving...
+5091:M 02 Apr 2025 11:00:20.038 * Background saving started by pid 5855
+5855:C 02 Apr 2025 11:00:20.200 * DB saved on disk
+5855:C 02 Apr 2025 11:00:20.204 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+5091:M 02 Apr 2025 11:00:20.241 * Background saving terminated with success
+5111:C 03 Apr 2025 20:04:57.257 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+5111:C 03 Apr 2025 20:04:57.344 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+5111:C 03 Apr 2025 20:04:57.344 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5111:C 03 Apr 2025 20:04:57.344 * Redis version=7.4.1, bits=64, commit=00000000, modified=0, pid=5111, just started
+5111:C 03 Apr 2025 20:04:57.344 * Configuration loaded
+5111:M 03 Apr 2025 20:04:57.346 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+5111:M 03 Apr 2025 20:04:57.346 * monotonic clock: POSIX clock_gettime
+5111:M 03 Apr 2025 20:04:57.350 * Running mode=cluster, port=7001.
+5111:M 03 Apr 2025 20:04:57.427 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+5111:M 03 Apr 2025 20:04:57.428 * Server initialized
+5111:M 03 Apr 2025 20:04:57.517 * Reading RDB base file on AOF loading...
+5111:M 03 Apr 2025 20:04:57.517 * Loading RDB produced by version 7.0.15
+5111:M 03 Apr 2025 20:04:57.517 * RDB age 977986 seconds
+5111:M 03 Apr 2025 20:04:57.517 * RDB memory usage when created 1.53 Mb
+5111:M 03 Apr 2025 20:04:57.517 * RDB is base AOF
+5111:M 03 Apr 2025 20:04:57.517 * Done loading RDB, keys loaded: 0, keys expired: 0.
+5111:M 03 Apr 2025 20:04:57.519 * DB loaded from base file appendonly.aof.1.base.rdb: 0.045 seconds
+5111:M 03 Apr 2025 20:04:57.773 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.255 seconds
+5111:M 03 Apr 2025 20:04:57.773 * DB loaded from append only file: 0.300 seconds
+5111:M 03 Apr 2025 20:04:57.773 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+5111:M 03 Apr 2025 20:04:57.774 * Ready to accept connections tcp
+5111:M 03 Apr 2025 20:04:59.402 * Replica 127.0.0.1:7003 asks for synchronization
+5111:M 03 Apr 2025 20:04:59.402 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '59bc4b3a560d3d84c69c9cfecc3fed9a760ea06d', my replication IDs are '8974eb1caa63c6f104be49047a8cf31a888f377c' and '0000000000000000000000000000000000000000')
+5111:M 03 Apr 2025 20:04:59.402 * Replication backlog created, my new replication IDs are '6504ec3671b366340463ecd896e749245d0aef42' and '0000000000000000000000000000000000000000'
+5111:M 03 Apr 2025 20:04:59.402 * Delay next BGSAVE for diskless SYNC
+5111:M 03 Apr 2025 20:04:59.858 * Cluster state changed: ok
+5111:M 03 Apr 2025 20:05:04.318 * Starting BGSAVE for SYNC with target: replicas sockets
+5111:M 03 Apr 2025 20:05:04.319 * Background RDB transfer started by pid 5170
+5170:C 03 Apr 2025 20:05:04.329 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5111:M 03 Apr 2025 20:05:04.330 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+5111:M 03 Apr 2025 20:05:04.422 * Background RDB transfer terminated with success
+5111:M 03 Apr 2025 20:05:04.422 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+5111:M 03 Apr 2025 20:05:04.422 * Synchronization with replica 127.0.0.1:7003 succeeded
+5111:M 03 Apr 2025 20:09:58.046 * 100 changes in 300 seconds. Saving...
+5111:M 03 Apr 2025 20:09:58.047 * Background saving started by pid 5188
+5188:C 03 Apr 2025 20:09:58.222 * DB saved on disk
+5188:C 03 Apr 2025 20:09:58.225 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5111:M 03 Apr 2025 20:09:58.250 * Background saving terminated with success
+5313:C 04 Apr 2025 13:56:46.466 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+5313:C 04 Apr 2025 13:56:46.557 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+5313:C 04 Apr 2025 13:56:46.558 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5313:C 04 Apr 2025 13:56:46.558 * Redis version=7.4.1, bits=64, commit=00000000, modified=0, pid=5313, just started
+5313:C 04 Apr 2025 13:56:46.558 * Configuration loaded
+5313:M 04 Apr 2025 13:56:46.560 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+5313:M 04 Apr 2025 13:56:46.560 * monotonic clock: POSIX clock_gettime
+5313:M 04 Apr 2025 13:56:46.563 * Running mode=cluster, port=7001.
+5313:M 04 Apr 2025 13:56:46.634 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+5313:M 04 Apr 2025 13:56:46.635 * Server initialized
+5313:M 04 Apr 2025 13:56:46.737 * Reading RDB base file on AOF loading...
+5313:M 04 Apr 2025 13:56:46.737 * Loading RDB produced by version 7.0.15
+5313:M 04 Apr 2025 13:56:46.737 * RDB age 1042295 seconds
+5313:M 04 Apr 2025 13:56:46.737 * RDB memory usage when created 1.53 Mb
+5313:M 04 Apr 2025 13:56:46.737 * RDB is base AOF
+5313:M 04 Apr 2025 13:56:46.737 * Done loading RDB, keys loaded: 0, keys expired: 0.
+5313:M 04 Apr 2025 13:56:46.739 * DB loaded from base file appendonly.aof.1.base.rdb: 0.035 seconds
+5313:M 04 Apr 2025 13:56:46.904 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.165 seconds
+5313:M 04 Apr 2025 13:56:46.904 * DB loaded from append only file: 0.200 seconds
+5313:M 04 Apr 2025 13:56:46.904 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+5313:M 04 Apr 2025 13:56:46.905 * Ready to accept connections tcp
+5313:M 04 Apr 2025 13:56:48.103 * Replica 127.0.0.1:7003 asks for synchronization
+5313:M 04 Apr 2025 13:56:48.103 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'f308c684d8a0600b3d76ada1cac17ee572a2552b', my replication IDs are 'd50541109414bbb4f7b7e6a69999b3137b711d90' and '0000000000000000000000000000000000000000')
+5313:M 04 Apr 2025 13:56:48.103 * Replication backlog created, my new replication IDs are '69f8b79897cda12ca80afe8a1ee0b2b5482e6fd1' and '0000000000000000000000000000000000000000'
+5313:M 04 Apr 2025 13:56:48.103 * Delay next BGSAVE for diskless SYNC
+5313:M 04 Apr 2025 13:56:48.911 * Cluster state changed: ok
+5313:M 04 Apr 2025 13:56:53.072 * Starting BGSAVE for SYNC with target: replicas sockets
+5313:M 04 Apr 2025 13:56:53.074 * Background RDB transfer started by pid 5366
+5366:C 04 Apr 2025 13:56:53.084 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5313:M 04 Apr 2025 13:56:53.084 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+5313:M 04 Apr 2025 13:56:53.177 * Background RDB transfer terminated with success
+5313:M 04 Apr 2025 13:56:53.177 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+5313:M 04 Apr 2025 13:56:53.177 * Synchronization with replica 127.0.0.1:7003 succeeded
+5313:M 04 Apr 2025 14:01:47.068 * 100 changes in 300 seconds. Saving...
+5313:M 04 Apr 2025 14:01:47.069 * Background saving started by pid 5431
+5431:C 04 Apr 2025 14:01:47.275 * DB saved on disk
+5431:C 04 Apr 2025 14:01:47.278 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+5313:M 04 Apr 2025 14:01:47.372 * Background saving terminated with success
+5157:C 05 Apr 2025 13:36:27.865 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+5157:C 05 Apr 2025 13:36:27.935 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+5157:C 05 Apr 2025 13:36:27.935 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5157:C 05 Apr 2025 13:36:27.935 * Redis version=7.4.1, bits=64, commit=00000000, modified=0, pid=5157, just started
+5157:C 05 Apr 2025 13:36:27.935 * Configuration loaded
+5157:M 05 Apr 2025 13:36:27.936 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+5157:M 05 Apr 2025 13:36:27.936 * monotonic clock: POSIX clock_gettime
+5157:M 05 Apr 2025 13:36:27.939 * Running mode=cluster, port=7001.
+5157:M 05 Apr 2025 13:36:27.952 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+5157:M 05 Apr 2025 13:36:27.953 * Server initialized
+5157:M 05 Apr 2025 13:36:28.078 * Reading RDB base file on AOF loading...
+5157:M 05 Apr 2025 13:36:28.078 * Loading RDB produced by version 7.0.15
+5157:M 05 Apr 2025 13:36:28.078 * RDB age 1127477 seconds
+5157:M 05 Apr 2025 13:36:28.078 * RDB memory usage when created 1.53 Mb
+5157:M 05 Apr 2025 13:36:28.078 * RDB is base AOF
+5157:M 05 Apr 2025 13:36:28.078 * Done loading RDB, keys loaded: 0, keys expired: 0.
+5157:M 05 Apr 2025 13:36:28.079 * DB loaded from base file appendonly.aof.1.base.rdb: 0.079 seconds
+5157:M 05 Apr 2025 13:36:28.282 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.202 seconds
+5157:M 05 Apr 2025 13:36:28.282 * DB loaded from append only file: 0.281 seconds
+5157:M 05 Apr 2025 13:36:28.282 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+5157:M 05 Apr 2025 13:36:28.282 * Ready to accept connections tcp
+5157:M 05 Apr 2025 13:36:29.675 * Replica 127.0.0.1:7003 asks for synchronization
+5157:M 05 Apr 2025 13:36:29.675 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '5b00bccf4e6a56eb0c38ea0065fd241394237e7d', my replication IDs are 'fb105e4d213b8397134b0e3c8133dc85769be729' and '0000000000000000000000000000000000000000')
+5157:M 05 Apr 2025 13:36:29.675 * Replication backlog created, my new replication IDs are 'b4773af156c88cfc136e45d48fde92370b00abcb' and '0000000000000000000000000000000000000000'
+5157:M 05 Apr 2025 13:36:29.675 * Delay next BGSAVE for diskless SYNC
+5157:M 05 Apr 2025 13:36:30.383 * Cluster state changed: ok
+5157:M 05 Apr 2025 13:36:34.533 * Starting BGSAVE for SYNC with target: replicas sockets
+5157:M 05 Apr 2025 13:36:34.535 * Background RDB transfer started by pid 5211
+5211:C 05 Apr 2025 13:36:34.540 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5157:M 05 Apr 2025 13:36:34.540 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+5157:M 05 Apr 2025 13:36:34.637 * Background RDB transfer terminated with success
+5157:M 05 Apr 2025 13:36:34.637 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+5157:M 05 Apr 2025 13:36:34.637 * Synchronization with replica 127.0.0.1:7003 succeeded
+5157:M 05 Apr 2025 13:41:28.098 * 100 changes in 300 seconds. Saving...
+5157:M 05 Apr 2025 13:41:28.100 * Background saving started by pid 5278
+5278:C 05 Apr 2025 13:41:28.333 * DB saved on disk
+5278:C 05 Apr 2025 13:41:28.335 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+5157:M 05 Apr 2025 13:41:28.404 * Background saving terminated with success
+5207:C 07 Apr 2025 13:05:36.911 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+5207:C 07 Apr 2025 13:05:37.116 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+5207:C 07 Apr 2025 13:05:37.116 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5207:C 07 Apr 2025 13:05:37.116 * Redis version=7.4.1, bits=64, commit=00000000, modified=0, pid=5207, just started
+5207:C 07 Apr 2025 13:05:37.116 * Configuration loaded
+5207:M 07 Apr 2025 13:05:37.118 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+5207:M 07 Apr 2025 13:05:37.118 * monotonic clock: POSIX clock_gettime
+5207:M 07 Apr 2025 13:05:37.122 * Running mode=cluster, port=7001.
+5207:M 07 Apr 2025 13:05:37.129 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+5207:M 07 Apr 2025 13:05:37.130 * Server initialized
+5207:M 07 Apr 2025 13:05:37.395 * Reading RDB base file on AOF loading...
+5207:M 07 Apr 2025 13:05:37.395 * Loading RDB produced by version 7.0.15
+5207:M 07 Apr 2025 13:05:37.395 * RDB age 1298426 seconds
+5207:M 07 Apr 2025 13:05:37.395 * RDB memory usage when created 1.53 Mb
+5207:M 07 Apr 2025 13:05:37.395 * RDB is base AOF
+5207:M 07 Apr 2025 13:05:37.395 * Done loading RDB, keys loaded: 0, keys expired: 0.
+5207:M 07 Apr 2025 13:05:37.398 * DB loaded from base file appendonly.aof.1.base.rdb: 0.202 seconds
+5207:M 07 Apr 2025 13:05:37.580 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.183 seconds
+5207:M 07 Apr 2025 13:05:37.580 * DB loaded from append only file: 0.385 seconds
+5207:M 07 Apr 2025 13:05:37.580 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+5207:M 07 Apr 2025 13:05:37.581 * Ready to accept connections tcp
+5207:M 07 Apr 2025 13:05:39.528 * Replica 127.0.0.1:7003 asks for synchronization
+5207:M 07 Apr 2025 13:05:39.528 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '2522b7ff537a5034898d88f213e08ae672c8f2cb', my replication IDs are '4bb75a9e4f24a32bcdde6f4aa693766120b155a0' and '0000000000000000000000000000000000000000')
+5207:M 07 Apr 2025 13:05:39.528 * Replication backlog created, my new replication IDs are '9934be4c6865fcbd1bd7b19d64da6fc8979306d0' and '0000000000000000000000000000000000000000'
+5207:M 07 Apr 2025 13:05:39.528 * Delay next BGSAVE for diskless SYNC
+5207:M 07 Apr 2025 13:05:39.677 * Cluster state changed: ok
+5207:M 07 Apr 2025 13:05:44.343 * Starting BGSAVE for SYNC with target: replicas sockets
+5207:M 07 Apr 2025 13:05:44.344 * Background RDB transfer started by pid 5264
+5264:C 07 Apr 2025 13:05:44.352 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5207:M 07 Apr 2025 13:05:44.352 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+5207:M 07 Apr 2025 13:05:44.446 * Background RDB transfer terminated with success
+5207:M 07 Apr 2025 13:05:44.447 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+5207:M 07 Apr 2025 13:05:44.447 * Synchronization with replica 127.0.0.1:7003 succeeded
+5207:M 07 Apr 2025 13:10:38.062 * 100 changes in 300 seconds. Saving...
+5207:M 07 Apr 2025 13:10:38.063 * Background saving started by pid 5714
+5714:C 07 Apr 2025 13:10:38.458 * DB saved on disk
+5714:C 07 Apr 2025 13:10:38.461 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+5207:M 07 Apr 2025 13:10:38.469 * Background saving terminated with success
+5070:C 07 Apr 2025 23:19:37.010 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+5070:C 07 Apr 2025 23:19:37.089 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+5070:C 07 Apr 2025 23:19:37.089 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+5070:C 07 Apr 2025 23:19:37.089 * Redis version=7.4.1, bits=64, commit=00000000, modified=0, pid=5070, just started
+5070:C 07 Apr 2025 23:19:37.089 * Configuration loaded
+5070:M 07 Apr 2025 23:19:37.093 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+5070:M 07 Apr 2025 23:19:37.093 * monotonic clock: POSIX clock_gettime
+5070:M 07 Apr 2025 23:19:37.098 * Running mode=cluster, port=7001.
+5070:M 07 Apr 2025 23:19:37.140 * Node configuration loaded, I'm 4f9654d41989b505dd8d9f424c411f4a473bda63
+5070:M 07 Apr 2025 23:19:37.141 * Server initialized
+5070:M 07 Apr 2025 23:19:37.405 * Reading RDB base file on AOF loading...
+5070:M 07 Apr 2025 23:19:37.405 * Loading RDB produced by version 7.0.15
+5070:M 07 Apr 2025 23:19:37.405 * RDB age 1335266 seconds
+5070:M 07 Apr 2025 23:19:37.405 * RDB memory usage when created 1.53 Mb
+5070:M 07 Apr 2025 23:19:37.405 * RDB is base AOF
+5070:M 07 Apr 2025 23:19:37.405 * Done loading RDB, keys loaded: 0, keys expired: 0.
+5070:M 07 Apr 2025 23:19:37.406 * DB loaded from base file appendonly.aof.1.base.rdb: 0.212 seconds
+5070:M 07 Apr 2025 23:19:37.508 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.102 seconds
+5070:M 07 Apr 2025 23:19:37.508 * DB loaded from append only file: 0.314 seconds
+5070:M 07 Apr 2025 23:19:37.509 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+5070:M 07 Apr 2025 23:19:37.509 * Ready to accept connections tcp
+5070:M 07 Apr 2025 23:19:39.143 * Replica 127.0.0.1:7003 asks for synchronization
+5070:M 07 Apr 2025 23:19:39.143 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '18f9fb7c1912586627901e532cba60610d05d8b7', my replication IDs are '571dce56d327a961a2a78c04be0baf6fd57c8843' and '0000000000000000000000000000000000000000')
+5070:M 07 Apr 2025 23:19:39.143 * Replication backlog created, my new replication IDs are '5fb855ed70229a6fc2131c656a59612f7900ff47' and '0000000000000000000000000000000000000000'
+5070:M 07 Apr 2025 23:19:39.143 * Delay next BGSAVE for diskless SYNC
+5070:M 07 Apr 2025 23:19:39.598 * Cluster state changed: ok
+5070:M 07 Apr 2025 23:19:44.969 * Starting BGSAVE for SYNC with target: replicas sockets
+5070:M 07 Apr 2025 23:19:44.971 * Background RDB transfer started by pid 5132
+5132:C 07 Apr 2025 23:19:44.977 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+5070:M 07 Apr 2025 23:19:44.978 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+5070:M 07 Apr 2025 23:19:45.073 * Background RDB transfer terminated with success
+5070:M 07 Apr 2025 23:19:45.073 * Streamed RDB transfer with replica 127.0.0.1:7003 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+5070:M 07 Apr 2025 23:19:45.073 * Synchronization with replica 127.0.0.1:7003 succeeded
+5070:M 07 Apr 2025 23:24:38.087 * 100 changes in 300 seconds. Saving...
+5070:M 07 Apr 2025 23:24:38.088 * Background saving started by pid 5200
+5200:C 07 Apr 2025 23:24:38.200 * DB saved on disk
+5200:C 07 Apr 2025 23:24:38.202 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 0 MB
+5070:M 07 Apr 2025 23:24:38.293 * Background saving terminated with success

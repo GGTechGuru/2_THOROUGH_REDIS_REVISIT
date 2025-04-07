@@ -1,0 +1,29 @@
+apropos redis
+cd /etc/redis
+export REDIS_CLUSTER_URL="redis://localhost:7000/0"
+for i in {7000..7005}; do     cat redis.conf | sed -e "s/7000/$i/" > "$i"/redis.conf;     ls -l "$i"/redis.conf; done
+for i in {7000..7007}; do      (     cd $i;     nohup redis-server ./redis.conf & ); done
+man redis-cli
+pip install redis-py
+redis-cli
+redis-cli --cluster add-node 127.0.0.1:7006 127.0.0.1:7000
+redis-cli --cluster create 127.0.0.1:7000 127.0.0.1:7001  127.0.0.1:7002  127.0.0.1:7003  127.0.0.1:7004  127.0.0.1:7005  127.0.0.1:7006 --cluster-replicas 1
+redis-cli --cluster help
+redis-cli --help
+redis-cli nodes
+redis-cli -p 6379 cluster nodes
+redis-cli -p 7000 -c
+redis-cli -p 7000 --cluster add-node 127.0.0.1:7007 127.0.0.1:7000 --cluster-slave --cluster-master-id f5ff27b95b0e28eb296332275b3a8cf60810b399
+redis-cli -p 7000 cluster nodes
+redis-cli -p 7000 --cluster reshard 127.0.0.1:7000
+redis-cli -p 7000 cluster slots
+sudo add-apt-repository ppa:redislabs/redis
+sudo apt-get -y install redis redis-sentinel net-tools
+sudo apt install python3-redis
+sudo apt install redis-server
+sudo aptitude install python3-rediscluster
+sudo systemctl enable redis
+sudo systemctl enable redis-server.service
+sudo systemctl status redis
+sudo vi -R  /etc/redis/redis.conf
+which redis-server
