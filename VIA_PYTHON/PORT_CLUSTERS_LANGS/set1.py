@@ -88,26 +88,48 @@ def spop_try_b():
         some_val = str(time.time()).split(".")[-1]
         rc.sadd("tag1", some_val)
 
-    print("smembers('tag1'):{0}".format(str(rc.smembers("tag1"))))
+    rval = rc.smembers("tag1")
+    py_set_main = set(rval)
+    print("smembers('tag1'):{0}".format(str(rval)))
 
     for index in range( 0, int(rc.scard("tag1")/5) ):
         rval = rc.spop("tag1")
+        py_set_main -= {rval}
         print("rval from spop():{0}".format(str(rval)))
-        print("Remaining smembers('tag1'):{0}".format(str(rc.smembers("tag1"))))
-        
+
+        set_main = rc.smembers("tag1")
+        # print("Remaining smembers('tag1'):{0}".format(str(rc.smembers("tag1"))))
+
+        diff_set = py_set_main ^ set_main
+        if len(diff_set) > 0:
+            print("Diff from py set ops: {0}".format(str(diff_set)))
+
 
     rc.delete("tag1")
     for index in range(0,100):
         some_val = str(time.time()).split(".")[-1]
         rc.sadd("tag1", some_val)
 
-    print("smembers('tag1'):{0}".format(str(rc.smembers("tag1"))))
+    # print("smembers('tag1'):{0}".format(str(rc.smembers("tag1"))))
+    rval = rc.smembers("tag1")
+    py_set_main = set(rval)
+    print("smembers('tag1'):{0}".format(str(rval)))
 
     for index in range( 0, int(rc.scard("tag1")/5) ):
         count = random.randint( 2, int(rc.scard("tag1") / 10) + 2 )
         rval = rc.spop("tag1", count)
-        print("rval from spop('tag1', {0}):{1}".format(count, str(rval)))
-        print("Remaining smembers('tag1'):{0}".format(str(rc.smembers("tag1"))))
+
+        py_set_main -= set(rval)
+
+        # print("rval from spop('tag1', {0}):{1}".format(count, str(rval)))
+
+        # print("Remaining smembers('tag1'):{0}".format(str(rc.smembers("tag1"))))
+        set_main = rc.smembers("tag1")
+
+        diff_set = py_set_main ^ set_main
+        if len(diff_set) > 0:
+            print("Diff from py set ops: {0}".format(str(diff_set)))
+
         
 ##########################
 

@@ -2,8 +2,30 @@
 
 import redis
 
+
+def set_conn():
+
+    addr = os.getenv("REDIS_SINGLE_ADDR")
+
+    if addr is not None:
+        addr_as_list = addr.split(":")
+        ip = addr_as_list[0]
+        port = int(addr_as_list[1])
+        r = redis.Redis(host=ip, port=port)
+
+    else:
+        print("REDIS_SINGLE_ADDR env not set. Using redis default")
+        r = redis.Redis()
+
+    return r
+
+################################
+
+rconn_global = set_conn()
+
+################################
 def list_try_a():
-    r = redis.Redis()
+    r = rconn_global
 
     r.delete("fruits")
 

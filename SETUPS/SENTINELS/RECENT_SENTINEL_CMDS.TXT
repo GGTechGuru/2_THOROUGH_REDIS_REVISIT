@@ -1,0 +1,17 @@
+apropos redis
+cd /etc/redis
+for d in {50000..50005}; do     (     cd $d;     nohup redis-server ./sentinel.conf --sentinel &     ); done
+man redis-cli
+pip install redis-py
+redis-cli
+redis-cli --help
+redis-cli -u redis://localhost:50000
+sudo add-apt-repository ppa:redislabs/redis
+sudo apt-get -y install redis redis-sentinel net-tools
+sudo apt install python3-redis
+sudo apt install redis-server
+sudo lsof -i :50000
+sudo systemctl enable redis
+sudo systemctl enable redis-server.service
+sudo systemctl status redis
+which redis-server

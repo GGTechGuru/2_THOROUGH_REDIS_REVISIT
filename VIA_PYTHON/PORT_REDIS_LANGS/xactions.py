@@ -6,6 +6,8 @@ import multiprocessing
 
 import math
 
+import os
+
 import time
 
 ####################################
@@ -75,7 +77,8 @@ def xactions_check():
             print("Values {0}-to-{1}".format(rlist[index-1], rlist[index]))
 
 ##########################
-if __name__ == "__main__":
+
+def pl_test_mon_try_a():
 
     r = rconn_global
     r.delete("akey")
@@ -105,3 +108,37 @@ if __name__ == "__main__":
         proc.join()
 
     xactions_check()
+##########################
+
+def xactions_discard_try_c():
+
+    r = rconn_global
+
+    some_key = "akey_" + str(time.time()).split(".")[-1]
+
+    pl = r.pipeline(transaction=True)
+
+    for index in range(0,10):
+        pl.rpush(some_key, index)
+
+    pl.discard()
+
+    pl = r.pipeline(transaction=True)
+    for index in range(11,20):
+        pl.rpush(some_key, index)
+
+    pl.execute()
+
+    l = list(r.lrange(some_key, 0, -1))
+    l.sort()
+
+    print("List after discarding pipeline push:{0}-{1}, adding push:{2}-{3}::\n{4}".format(0, 10-1, 11, 20-1, str(l)))
+    
+
+########################
+
+if __name__ == "__main__":
+
+    # pl_test_mon_try_a()
+
+    xactions_discard_try_c()

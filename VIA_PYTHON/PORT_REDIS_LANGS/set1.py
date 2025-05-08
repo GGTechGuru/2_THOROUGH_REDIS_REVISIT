@@ -100,7 +100,7 @@ def sinter_try_b():
 
     s1_2_4 = list(r.sinter('rag1', 'rag2', 'rag4'))
     s1_2_4.sort()
-    print("sinter('rag1', 'rag2', 'rag4'):{0}".format(str(s1_2_4)))
+    print("sinter('rag1', 'rag2', 'rag4')::\n{0}".format(str(s1_2_4)))
     
     py_s1 = set(s1)
     py_s2 = set(s2)
@@ -109,11 +109,78 @@ def sinter_try_b():
     py_inter = py_s1 & py_s2 & py_s4
     py_inter_l = list(py_inter)
     py_inter_l.sort()
-    print("Expected intersection via python set op:{0}".format(str(py_inter_l)))
+    print("Expected intersection via python set op::\n{0}".format(str(py_inter_l)))
+
+    rval = r.sinterstore("tmp_inter", "rag1", "rag2", "rag4")
+    sinter = list(r.smembers("tmp_inter"))
+    sinter.sort()
+    print("Intersection per sinterstore->('tmp_inter')::\n{0}".format(sinter))
+
+###########################
+
+
+def sunion_try_d():
+
+    r = rconn_global
+
+    r.delete('rag1')
+    r.delete('rag2')
+    r.delete('rag4')
+
+    for count in range(0,20):
+        which_set = random.randint(1, 1|(1<<1)|(1<<2))
+
+        some_val = str(time.time()).split(".")[-1]
+        if which_set & (1<<0):
+            key = "rag1"
+            rval = r.sadd(key, some_val)
+            # print("rval from sadd( {0}, {1} ):{1}".format( key, some_val, str(rval)))
+
+        if which_set & (1<<1):
+            key = "rag2"
+            rval = r.sadd(key, some_val)
+
+
+        if which_set & (1<<2):
+            key = "rag4"
+            rval = r.sadd(key, some_val)
+
+
+    s1 = list(r.smembers('rag1'))
+    s1.sort()
+    print("smembers('rag1'):{0}".format(str(s1)))
+
+    s2 = list(r.smembers('rag2'))
+    s2.sort()
+    print("smembers('rag2'):{0}".format(str(s2)))
+
+    s4 = list(r.smembers('rag4'))
+    s4.sort()
+    print("smembers('rag4'):{0}".format(str(s4)))
+
+
+    s1_2_4 = list(r.sunion('rag1', 'rag2', 'rag4'))
+    s1_2_4.sort()
+    print("sunion('rag1', 'rag2', 'rag4')::\n{0}".format(str(s1_2_4)))
+    
+    py_s1 = set(s1)
+    py_s2 = set(s2)
+    py_s4 = set(s4)
+
+    py_union = py_s1 | py_s2 | py_s4
+    py_union_l = list(py_union)
+    py_union_l.sort()
+    print("Expected union via python set op::\n{0}".format(str(py_union_l)))
+
+    rval = r.sunionstore("tmp_union", "rag1", "rag2", "rag4")
+    sunion = list(r.smembers("tmp_union"))
+    sunion.sort()
+    print("Intersection per sunionstore->('tmp_union')::\n{0}".format(sunion))
 
 ###########################
 
 if __name__ == "__main__":
     # set_try_a()
+    # sinter_try_b()
 
-    sinter_try_b()
+    sunion_try_d()
